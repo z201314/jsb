@@ -46,7 +46,7 @@ var ikan = {
 		},
 	},
 	swiper: function() {
-		$.getScript(smcms.tpl + "https://cdn.jsdelivr.net/gh/z201314/jsb/005-1js/swiper.min.js", function() {
+		$.getScript("https://cdn.jsdelivr.net/gh/z201314/jsb/005-1js/swiper.min.js", function() {
 				var swiper = new Swiper('.banner-top', {
 					autoplay: 5000,
 					autoplayDisableOnInteraction : false,
@@ -206,7 +206,7 @@ var ikan = {
 	wrapper: function() {
 		var windowWidth = $(window).width();
 		if (windowWidth < 820) {
-		$.getScript(smcms.tpl + "https://cdn.jsdelivr.net/gh/z201314/jsb/005-1js/iscroll.js", function() {
+		$.getScript("https://cdn.jsdelivr.net/gh/z201314/jsb/005-1js/iscroll.js", function() {
 		   $(".wrapper").navbarscroll()
 		   $('#ik01').navbarscroll({SelectName:'.ik-n-01'});
 		   $('#ik02').navbarscroll({SelectName:'.ik-n-02'});
@@ -236,7 +236,7 @@ var ikan = {
 
 	images: {
 		lazyload: function() {
-			$.getScript(smcms.tpl + "https://cdn.jsdelivr.net/gh/z201314/jsb/005-1js/jquery.lazyload.min.js", function() {
+			$.getScript("https://cdn.jsdelivr.net/gh/z201314/jsb/005-1js/jquery.lazyload.min.js", function() {
 				$(".lazyload").lazyload({
 					effect: "fadeIn",
 					threshold: 200,
@@ -256,7 +256,7 @@ var ikan = {
 			})
 		},
 		qrcode: function() {
-			$.getScript(smcms.tpl + "https://cdn.jsdelivr.net/gh/z201314/jsb/005-1js/jquery.qrcode.min.js", function() {
+			$.getScript("https://cdn.jsdelivr.net/gh/z201314/jsb/005-1js/jquery.qrcode.min.js", function() {
 				$(".cans").qrcode({
 					width:120,
 					height:120,
@@ -298,7 +298,7 @@ var ikan = {
 		})
 	},
 	copy: function() {
-		$.getScript(smcms.tpl + "https://cdn.jsdelivr.net/gh/z201314/jsb/005-1js/clipboard.min.js", function() {
+		$.getScript("https://cdn.jsdelivr.net/gh/z201314/jsb/005-1js/clipboard.min.js", function() {
 			var btn=document.getElementsByClassName('copy_btn');
 			var clipboard=new Clipboard(btn);
 			clipboard.on('success', function(e){
